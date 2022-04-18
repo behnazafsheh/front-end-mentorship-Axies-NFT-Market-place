@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 62.5%;
+  font-family: "Urbanist", "Roboto", sans-serif;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #14141f;
+}
+
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 1rem;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+//   justify-content: space-around;
+}
+
+a {
+  text-decoration: none;
+}
