@@ -40,6 +40,10 @@ a {
   text-decoration: none;
 }
 
+.nav-bar {
+  position: sticky;
+}
+
 li {
   color: white;
   font-size: 1.5rem;
