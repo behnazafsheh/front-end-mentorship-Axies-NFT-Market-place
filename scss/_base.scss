@@ -34,7 +34,7 @@ ul {
   list-style: none;
 }
 
-a{
+a {
   text-decoration: none;
   cursor: pointer;
 }
@@ -70,8 +70,8 @@ a{
     color: white;
     padding: 1rem;
 
-    &:hover{
-      background-color:gray;
+    &:hover {
+      background-color: gray;
       border-radius: 0.5rem;
     }
   }
@@ -117,33 +117,31 @@ a{
   margin: 1rem 2rem;
   align-items: center;
 
-  i{
+  i {
     font-size: 2rem;
     color: honeydew;
   }
-
-
 }
 
-.header-wallet{
+.header-wallet {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  border:  1px solid rgb(78, 63, 238);
+  border: 1px solid rgb(78, 63, 238);
   border-radius: 2rem;
   padding: 0.5rem 2rem;
 
-  &:hover{
+  &:hover {
     box-shadow: 0px 0px 10px rgb(78, 63, 238);
   }
 
-  p{
+  p {
     margin-left: 1rem;
     color: white;
   }
 }
 
-.switch-mode img{
+.switch-mode img {
   margin: 0 2rem;
 }
