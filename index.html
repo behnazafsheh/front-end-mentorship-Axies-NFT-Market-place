@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NFT-Market-Place</title>
+    <title>NFT Market Place</title>
     <!-- css link -->
     <link rel="stylesheet" href="css/main.css" />
     <!-- google font -->
@@ -24,41 +24,68 @@
     />
   </head>
   <body>
-      <header class="header">
-          <nav class="nav-bar container">
-              <img src="images/logo_dark.png" alt="" class="header-logo">
-              <ul>
-                  <li>Home</li>
-                  <li>Explore
-                      <ul>
-                          <li>Auctions</li>
-                          <li>Collections</li>
-                          <li>Today's Picks</li>
-                          <li>Sellers</li>
-                      </ul>
-                  </li>
-                  <li>Activity
-                      <ul>
-                          <li>Streams</li>
-                          <li>Events</li>
-                      </ul>
-                  </li>
-                  <li>Community
-                      <ul>
-                          <li>Forum</li>
-                          <li>Social Medias</li>
-                      </ul>
-                  </li>
-                  <li>Pages
-                      <ul>
-                          <li>Blog</li>
-                          <li>FAQ</li>
-                          <li>Create Item</li>
-                      </ul>
-                  </li>
-                  <li>Contact</li>
-              </ul>
-          </nav>
-      </header>
+    <header class="header">
+      <div class="menu-container container">
+        <nav class="header-nav-bar">
+          <img src="images/logo_dark.png" alt="" class="header-logo" />
+          <ul class="header-nav-bar-list">
+            <li><a href="#">Home</a></li>
+
+            <li class="header-nav-bar-list-item">
+              <a href="#">Explore</a> <i class="fa-solid fa-caret-down"></i>
+              <div class="sub-menu-1">
+                <ul>
+                  <li><a href="#">Auctions</a></li>
+                  <li><a href="#">Collections</a></li>
+                  <li><a href="#">Today's Picks</a></li>
+                  <li><a href="#">Sellers</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="header-nav-bar__listitem">
+              <a href="#">Activity</a> <i class="fa-solid fa-caret-down"></i>
+              <div class="sub-menu-1">
+                <ul class="">
+                  <li><a href="#">Streams</a></li>
+                  <li><a href="#">Events</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="">
+              <a href="#">Community</a> <i class="fa-solid fa-caret-down"></i>
+              <div class="sub-menu-1">
+                <ul class="">
+                  <li><a href="#">Forum</a></li>
+                  <li><a href="#">Social Medias</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="">
+              <a href="#">Pages</a> <i class="fa-solid fa-caret-down"></i>
+              <div class="sub-menu-1">
+                <ul class="">
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">Create Item</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-search-bar">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <div class="header-wallet">
+            <i class="fa-solid fa-wallet"></i>
+            <p>Wallet connect</p>
+          </div>
+          <div class="switch-mode">
+            <a href="#"><img src="images/sun.png" alt=""/></a>
+            <a href="#"><img src="images/moon-2.png" alt="" /></a>
+          </div>
+        </div>
+      </div>
+    </header>
   </body>
 </html>
