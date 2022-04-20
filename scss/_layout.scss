@@ -1,3 +1,246 @@
-// .nav-bar{
-//     position: sticky;
-// }
+// header section
+.menu-container {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  background-color: #14141f;
+  border-bottom: 1px solid var(--gray-color);
+  box-shadow: 0px 0px 10px var(--gray-color);
+}
+.header-nav-bar {
+  width: 145rem;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  align-items: center;
+  margin: 1rem 1rem;
+
+  ul {
+    display: inline-flex;
+  }
+  li {
+    margin: 1rem;
+  }
+
+  i {
+    color: var(--white-color);
+    margin-left: 0.3rem;
+  }
+  a {
+    color: var(--white-color);
+    padding: 1rem;
+
+    &:hover {
+      background-color: var(--gray-color);
+      border-radius: 0.5rem;
+    }
+  }
+}
+
+.sub-menu-1 {
+  display: none;
+}
+
+.header-nav-bar ul li:hover .sub-menu-1 {
+  display: block;
+  position: absolute;
+  margin-top: 1.5rem;
+  margin-left: -1.5rem;
+  background-color: var(--gray-color);
+  border-radius: 1rem;
+
+  ul {
+    display: block;
+    margin: 1rem;
+  }
+
+  li {
+    padding: 1rem;
+    border-bottom: 1px solid var(--white-color);
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+  }
+  :last-child {
+    border-bottom: none;
+  }
+
+  a {
+    color: #343544;
+  }
+}
+
+.header-search-bar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: space-between;
+  margin: 1rem 2rem;
+  align-items: center;
+
+  i {
+    font-size: 2rem;
+    color: var(--white-color);
+  }
+}
+
+.header-wallet {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--blue-color);
+  border-radius: 2rem;
+  padding: 0.5rem 4rem;
+
+  &:hover {
+    box-shadow: 0px 0px 10px var(--blue-color);
+  }
+
+  p {
+    margin-left: 1rem;
+    color: var(--white-color);
+    font-size: 1.5rem;
+  }
+}
+
+.switch-mode {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: 0;
+
+  img {
+    margin: 0 1rem;
+    border-radius: 0.5rem;
+    padding: 1rem;
+  }
+
+  .dark-mood {
+    height: 5rem;
+  }
+}
+/////////////////////////////////
+
+//   hero section
+.hero {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 3rem;
+  align-items: center;
+}
+.main-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  p{
+      color: var(--gray-color);
+      margin-bottom: 2rem;
+      font-size: 1.2rem;
+  }
+
+  h2 {
+    font-size: 6rem;
+    color: var(--white-color);
+    margin-bottom: 2rem;
+
+    &:hover {
+      animation: textAnimation 2s infinite;
+    }
+  }
+
+  span {
+    color: var(--white-color);
+    margin: 0;
+    margin-top: -0.6em;
+    text-shadow: 0 0 0.05em #fff, 0 0 0.2em #fe05e1, 0 0 0.3em #fe05e1;
+    transform: rotate(-7deg);
+  }
+}
+.hero-image {
+  position: relative;
+
+  img {
+    animation: heroImageAnimation 5s infinite ease-in-out;
+    // animation-delay: 2s;
+  }
+}
+.hero-image-saturn {
+  position: absolute;
+  width: 70rem;
+  height: 100%;
+  right: -155px;
+  bottom: 0;
+}
+.sm-shape {
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-image: linear-gradient(
+    to right,
+    var(--blue-color),
+    var(--purple-color)
+  );
+  animation: shapeMovement-sm 5s infinite ease-in-out;
+}
+
+.bg-shape {
+  position: absolute;
+  top: 100px;
+  bottom: -150px;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  background-image: linear-gradient(
+    to right,
+    var(--blue-color),
+    var(--purple-color)
+  );
+  animation: shapeMovement-bg 5s infinite ease-in-out;
+}
+
+.m-shape {
+  background-color: var(--bg-color);
+  position: absolute;
+  bottom: 0;
+  right: 50px;
+  width: 6rem;
+  height: 6rem;
+  border: 2px solid var(--blue-color);
+  border-radius: 50%;
+  box-shadow: 8px 8px 35px var(--white-color);
+  animation: shapeMovement-bg 5s infinite ease-in-out;
+}
+.hero-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.hero-explore {
+    border: 1px solid var(--blue-color);
+    background-color: var(--bg-color);
+    color: var(--white-color);
+    border-radius: 2rem;
+    padding: 2rem 2rem;
+    margin: 0 2rem;
+    font-size: 1.5rem;
+
+  &:hover{
+    box-shadow: 0px 0px 10px var(--blue-color);
+  }
+}
+
+.hero-create {
+  border: 1px solid var(--blue-color);
+  background-color: var(--bg-color);
+  color: var(--white-color);
+  border-radius: 2rem;
+  padding: 2rem 2rem;
+  margin: 0 2rem;
+  font-size: 1.5rem;
+
+  &:hover{
+    box-shadow: 0px 0px 10px var(--blue-color);
+  }
+}
