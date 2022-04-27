@@ -122,74 +122,82 @@ i {
   display: flex;
   flex-direction: row;
   text-align: center;
+  align-items: center;
   background-color: #14141f;
   border-bottom: 1px solid var(--gray-color);
   box-shadow: 0px 0px 10px var(--gray-color);
 }
 
 .header-nav-bar {
-  width: 145rem;
-  display: grid;
-  grid-template-columns: 1fr 4fr;
+  background-color: var(--color-black);
+  width: 160rem;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  margin: 1rem 1rem;
+  margin-left: 3rem;
+  position: relative;
 }
 
 .header-nav-bar ul {
-  display: inline-flex;
+  list-style: none;
+  display: flex;
 }
 
-.header-nav-bar li {
-  margin: 1rem;
+.header-nav-bar ul li {
+  padding: 10px 20px;
+  position: relative;
 }
 
-.header-nav-bar i {
+.header-nav-bar ul li a {
+  font-size: 1.5rem;
   color: var(--white-color);
-  margin-left: 0.3rem;
+  text-decoration: none;
+  transition: all 0.3s;
+  border-radius: 1rem;
 }
 
-.header-nav-bar a {
-  color: var(--white-color);
-  padding: 1rem;
-}
-
-.header-nav-bar a:hover {
-  background-color: var(--gray-color);
-  border-radius: 0.5rem;
+.header-nav-bar ul li a:hover {
+  border-radius: 1rem;
 }
 
 .sub-menu-1 {
   display: none;
 }
 
-.header-nav-bar ul li:hover .sub-menu-1 {
+.header-nav-bar li:hover .sub-menu-1 {
   display: block;
   position: absolute;
-  margin-top: 1.5rem;
-  margin-left: -1.5rem;
+  left: 0;
+  top: 100%;
   background-color: var(--gray-color);
-  border-radius: 1rem;
+  border-radius: 2rem;
+}
+
+.header-nav-bar li:hover .sub-menu-1 :last-child {
+  border-bottom: none;
 }
 
 .header-nav-bar ul li:hover .sub-menu-1 ul {
   display: block;
-  margin: 1rem;
+  margin: 10px;
 }
 
-.header-nav-bar ul li:hover .sub-menu-1 li {
-  padding: 1rem;
+.header-nav-bar li:hover .sub-menu-1 ul li {
+  width: 150px;
+  padding: 10px;
   border-bottom: 1px solid var(--white-color);
-  background: transparent;
-  border-radius: 0;
-  text-align: left;
 }
 
-.header-nav-bar ul li:hover .sub-menu-1 :last-child {
-  border-bottom: none;
+.sub-menu-1 {
+  display: none;
 }
 
-.header-nav-bar ul li:hover .sub-menu-1 a {
-  color: #343544;
+.sub-menu-1 ul li:hover .sub-menu-1 {
+  display: block;
+  position: absolute;
+  left: 150px;
+  top: 0;
+  background-color: var(--color-black);
 }
 
 .header-search-bar {
@@ -198,6 +206,10 @@ i {
   justify-content: center;
   margin: 1rem 2rem;
   align-items: center;
+}
+
+.header-search-bar:hover {
+  cursor: pointer;
 }
 
 .header-search-bar i {
@@ -217,6 +229,7 @@ i {
 
 .header-wallet:hover {
   box-shadow: 0px 0px 10px var(--blue-color);
+  cursor: pointer;
 }
 
 .header-wallet p {
@@ -399,11 +412,21 @@ i {
   margin-bottom: 1rem;
 }
 
+.feature-item-icon-1:hover {
+  box-shadow: 0px 0px 50px var(--blue-color);
+  cursor: pointer;
+}
+
 .feature-item-icon-2 {
   background-color: var(--green-color);
   padding: 1.3rem;
   border-radius: 0.5rem;
   margin-bottom: 1rem;
+}
+
+.feature-item-icon-2:hover {
+  box-shadow: 0px 0px 50px var(--green-color);
+  cursor: pointer;
 }
 
 .feature-item-icon-3 {
@@ -413,11 +436,21 @@ i {
   margin-bottom: 1rem;
 }
 
+.feature-item-icon-3:hover {
+  box-shadow: 0px 0px 50px var(--purple-color);
+  cursor: pointer;
+}
+
 .feature-item-icon-4 {
   background-color: var(--red-color);
   padding: 1.3rem;
   border-radius: 0.5rem;
   margin-bottom: 1rem;
+}
+
+.feature-item-icon-4:hover {
+  box-shadow: 0px 0px 50px var(--red-color);
+  cursor: pointer;
 }
 
 .live-auction-container {
@@ -470,6 +503,7 @@ i {
 
 .place-bid {
   display: flex;
+  flex-direction: row;
   position: absolute;
   bottom: 180px;
   background-color: var(--white-color);
@@ -495,6 +529,7 @@ i {
 
 .timer {
   display: flex;
+  flex-direction: row;
   position: absolute;
   top: 35px;
   padding: 1rem;
@@ -515,9 +550,9 @@ i {
 }
 
 .post-creator-description {
-  width: 100%;
   display: flex;
   flex-direction: row;
+  width: 100%;
   justify-content: space-around;
   align-items: center;
 }
@@ -539,9 +574,9 @@ i {
 }
 
 .description-creator {
-  width: 100%;
   display: flex;
   flex-direction: column;
+  width: 100%;
   justify-content: space-around;
 }
 
@@ -561,9 +596,9 @@ i {
 }
 
 .auction-cost {
-  width: 100%;
   display: flex;
   flex-direction: row;
+  width: 100%;
   justify-content: space-around;
   align-items: center;
   margin: 1rem 0;
@@ -600,9 +635,9 @@ i {
 }
 
 .collection-container {
-  width: 30%;
   display: flex;
   flex-direction: column;
+  width: 30%;
   background-color: var(--darkGray-color);
   border-radius: 2rem;
   padding: 1rem;
@@ -758,12 +793,12 @@ i {
 }
 
 .hero-header {
+  display: flex;
+  flex-direction: column;
   background-image: url("/images/bg-.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -813,6 +848,8 @@ i {
 }
 
 .header-profile-notification {
+  display: flex;
+  flex-direction: row;
   background-color: var(--red-color);
   width: 2rem;
   height: 2rem;
@@ -821,7 +858,6 @@ i {
   position: absolute;
   right: 310px;
   top: 10px;
-  display: flex;
   text-align: center;
   align-items: center;
 }
@@ -889,6 +925,7 @@ i {
 
 .view-history {
   display: flex;
+  flex-direction: row;
 }
 
 .view-history p {
@@ -922,6 +959,7 @@ i {
 
 .load-more {
   display: flex;
+  flex-direction: row;
   align-items: center;
   flex-direction: row;
   justify-content: center;
@@ -942,6 +980,123 @@ i {
   cursor: pointer;
   color: var(--black-color);
   transition: 0.5s ease-in-out;
+}
+
+.footer {
+  background-color: var(--black-color);
+  margin-top: 5rem;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo p {
+  color: var(--gray-color);
+  font-size: 1.5rem;
+  margin: 0 3rem;
+}
+
+.footer-logo img {
+  width: 133px;
+  margin: 0 3rem;
+}
+
+.footer-my-account,
+.footer-resources,
+.footer-company {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.footer-my-account h3,
+.footer-resources h3,
+.footer-company h3 {
+  font-size: 3rem;
+  color: var(--white-color);
+}
+
+.footer-my-account li,
+.footer-resources li,
+.footer-company li {
+  color: var(--gray-color);
+  font-size: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  margin: 0 3rem;
+}
+
+.subscribe h3 {
+  font-size: 2.5rem;
+  color: var(--white-color);
+  margin: 1rem 0;
+}
+
+.subscribe-form {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid var(--darkGray-color);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.subscribe-form input {
+  width: 100%;
+  height: 65px;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.subscribe-form input i {
+  display: flex;
+  flex-direction: row;
+  font-size: 4rem;
+  background-color: var(--gray-color);
+  color: var(--white-color);
+  padding: 2rem;
+  justify-content: flex-end;
+  border-radius: 0 1rem 1rem 0;
+}
+
+.subscribe-form button {
+  box-sizing: border-box;
+  background-color: var(--darkGray-color);
+  width: 30%;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.footer-social-media ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-social-media ul li {
+  margin: 1.5rem;
+  padding: 1rem;
+  border-radius: 0.3rem;
+  background-color: var(--darkGray-color);
+}
+
+.footer-social-media ul li:hover {
+  background-color: var(--gray-color);
 }
 
 li {

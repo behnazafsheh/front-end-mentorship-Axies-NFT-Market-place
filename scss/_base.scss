@@ -111,3 +111,13 @@ i{
 @keyframes historyMove {
   100% {transform: rotate(360deg);}
 }
+
+
+@mixin FlexRow {
+  display: flex;
+  flex-direction: row;
+}
+@mixin FlexColumn {
+  display: flex;
+  flex-direction: column;
+}
