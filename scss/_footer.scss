@@ -1,0 +1,102 @@
+.footer {
+    background-color: var(--black-color);
+    margin-top: 5rem;
+  }
+  
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .footer-logo {
+    @include FlexColumn;
+  
+    p {
+      color: var(--gray-color);
+      font-size: 1.5rem;
+      margin: 0 3rem;
+    }
+  
+    img {
+      width: 133px;
+      margin: 0 3rem;
+    }
+  }
+  
+  .footer-my-account,
+  .footer-resources,
+  .footer-company {
+    @include FlexRow;
+    justify-content: center;
+  }
+  .footer-my-account h3,
+  .footer-resources h3,
+  .footer-company h3 {
+    font-size: 3rem;
+    color: var(--white-color);
+  }
+  .footer-my-account li,
+  .footer-resources li,
+  .footer-company li {
+    color: var(--gray-color);
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+  }
+  .subscribe {
+    @include FlexColumn;
+    margin: 0 3rem;
+  
+    h3 {
+      font-size: 2.5rem;
+      color: var(--white-color);
+      margin: 1rem 0;
+    }
+  }
+  .subscribe-form {
+    @include FlexRow;
+    border: 1px solid var(--darkGray-color);
+    border-radius: 1rem;
+    padding: 1rem;
+  
+    input {
+      width: 100%;
+      height: 65px;
+      border: none;
+      background-color: transparent;
+      outline: none;
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
+    i {
+      @include FlexRow;
+      justify-content: center;
+      align-items: center;
+      font-size: 4rem;
+      color: var(--white-color);
+    }
+  
+    button {
+      box-sizing: border-box;
+      background-color: var(--darkGray-color);
+      width: 30%;
+      border: none;
+      border-radius: 2rem;
+      cursor: pointer;
+    }
+  }
+  .footer-social-media ul {
+    @include FlexRow;
+  
+    li {
+      margin: 1.5rem;
+      padding: 1rem;
+      border-radius: 0.3rem;
+      background-color: var(--darkGray-color);
+  
+      &:hover {
+        background-color: var(--gray-color);
+      }
+    }
+  }
