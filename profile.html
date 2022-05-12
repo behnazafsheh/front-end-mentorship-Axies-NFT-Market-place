@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit profile</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- drop zone -->
+    <link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="hero-header__profile">
+        <div class="menu-container-profile container">
+          <nav class="header-nav-bar-profile">
+            <img src="images/logo_dark.png" alt="" class="header-logo" />
+            <ul class="header-nav-bar-list">
+              <li><a href="index.html">Home</a></li>
+
+              <li class="header-nav-bar-list-item">
+                <a href="#">Explore</a>  <i class="fa-solid fa-caret-down"></i>
+                <div class="sub-menu-1__profile">
+                  <ul>
+                    <li><a href="profile.html">Edit Profile</a></li>
+                    <li><a href="#">Collections</a></li>
+                    <li><a href="#">Today's Picks</a></li>
+                    <li><a href="#">Sellers</a></li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="header-nav-bar__listitem">
+                <a href="#">Activity</a> <i class="fa-solid fa-caret-down"></i>
+                <div class="sub-menu-1__profile">
+                  <ul class="">
+                    <li><a href="#">Streams</a></li>
+                    <li><a href="#">Events</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="">
+                <a href="#">Community</a> <i class="fa-solid fa-caret-down"></i>
+                <div class="sub-menu-1__profile">
+                  <ul class="">
+                    <li><a href="#">Forum</a></li>
+                    <li><a href="#">Social Medias</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="">
+                <a href="#">Pages</a> <i class="fa-solid fa-caret-down"></i>
+                <div class="sub-menu-1__profile">
+                  <ul class="">
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Create Item</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="header-search-bar-profile">
+            <div class="search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <div class="header-profile-detail__profile">
+              <i class="fa-solid fa-bell"></i>
+            </div>
+            <div class="header-profile-notification__profile">
+              <p>3</p>
+            </div>
+            <div class="header-profile-image__profile">
+              <img src="images/avt-1.jpg" alt="" />
+            </div>
+
+            <div class="switch-mode">
+                <i class="fa-solid fa-cloud-moon" id="dark-mode-profile"></i>
+            </div>
+          </div>
+        </div>
+        <div class="edit-profile__profile">
+          <h3>Edit Profile</h3>
+          <span class="edit-profile-text__profile"
+            >Edit profile <span>Home / Pages / Author</span></span
+          >
+        </div>
+      </div>
+    </header>
+    <section class="main-hero">
+      <div class="main-container container">
+        <div class="profile-card">
+          <div class="card-detail">
+            <img src="images/avt-1.jpg" alt="" />
+            <button>Upload New Profile</button>
+            <button>Delete</button>
+          </div>
+        </div>
+        <div class="profile-rt">
+          <section class="choose-profile-cover">
+            <h3 class="upload-file-header">Choose your cover image</h3>
+            <div class="upload-photo">
+              <div class="upload-file">
+                <button class="dropzone">Drag files</button>
+              </div>
+              <div class="image-file-1">
+                <img src="images/photo-1.jpeg" alt="" />
+              </div>
+              <div class="image-file-2">
+                <img src="images/photo-2.jpeg" alt="" />
+              </div>
+            </div>
+          </section>
+          <form action="" class="profile-form">
+            <div class="form-container">
+              <h3>Account Info</h3>
+              <div class="input-container">
+                <label class="first-name" for="fname">Display Name</label>
+                <input type="text" id="fname" name="fname" placeholder="Trista Francis"/>
+              </div>
+            <div class="input-container">
+              <label class="last-name" for="lname">Custom URL</label>
+              <input type="text" id="lname" name="lname" placeholder="Axis.TristaFrancis.com/"/>
+            </div>
+            <div class="input-container">
+              <label class="email" for="fname">Email</label>
+              <input type="text" id="fname" name="fname" placeholder="Enter Your Email"/>
+            </div>
+           <div class="input-container">
+            <label class="bio" for="fname">Bio</label>
+            <textarea name="bio" id="bio-input"></textarea>
+           </div>
+            
+            <div class="update-profile">
+              <button type="submit">Update profile</button>
+            </div>
+            </div>
+
+            <div class="form-container">
+              <h3>Your Social media</h3>
+              <div class="input-container">
+                <label class="facebook" for="fname">Facebook</label>
+                <input type="text" id="facebook" name="fname" placeholder="Facebook Username"/>
+                <button class="facebook-btn"><i class="fa-brands fa-facebook-f"></i>Connect to facebook</button>
+              </div>
+
+              <div class="input-container">
+                <label class="twitter" for="fname">Twitter</label>
+                <input type="text" id="twitter" name="twitter" placeholder="Twitter Username"/>
+                <button class="twitter-btn"><i class="fa-brands fa-twitter"></i>Connect to Twitter</button>
+              </div>
+
+              <div class="input-container">
+                <label class="discord" for="fname">Discord</label>
+                <input type="text" id="discord" name="discord" placeholder="Discord Username"/>
+                <button class="discord-btn"><i class="fa-brands fa-discord"></i>Connect to Discord</button>
+              </div>
+            </div>
+            
+          </form>
+
+          
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-logo">
+          <img src="images/logo_dark.png" alt="">
+          <p>Lorem ipsum dolor sit amet, 
+            consectetur adipiscing elit.
+            Nunc non adipiscing consectetur 
+            phasellus nunc nunc vel. </p>
+        </div>
+        
+        <div class="footer-my-account">
+          
+          <ul>
+            <li><h3>My Account</h3></li>
+            <li>Author</li>
+            <li>Collection</li>
+            <li>Author Profile</li>
+            <li>Create item</li>
+          </ul>
+        </div>
+
+        <div class="footer-resources">
+          <ul>
+            <li><h3>Resources</h3></li>
+            <li>Help & Support</li>
+            <li>Live Auctions</li>
+            <li>Item Details</li>
+            <li>Activity</li>
+          </ul>
+          
+         
+        </div>
+
+        <div class="footer-company">
+          <ul>
+          <li><h3>Company</h3></li>
+            <li>Explore</li>
+            <li>Contact Us</li>
+            <li>Our Blog</li>
+            <li>FAQ</li>
+          </ul>
+        </div>
+
+        <div class="subscribe">
+          <h3>Subscribe Us</h3>
+          <div class="subscribe-form">
+            <input type="text" placeholder="Info@youremail.com">
+            <button type="submit"><i class="fa-brands fa-telegram"></i></button>
+          
+          </div>
+
+            
+<div class="footer-social-media">
+  <ul>
+    <li><i class="fa-brands fa-discord"></i></li>
+    <li><i class="fa-brands fa-twitter"></i></li>
+    <li><i class="fa-brands fa-instagram"></i></li>
+    <li><i class="fa-brands fa-youtube"></i></li>
+    <li><i class="fa-brands fa-telegram"></i></li>
+    <li><i class="fa-brands fa-facebook-f"></i></li>
+  </ul>
+</div>
+            
+          </div>
+        </div>
+      </div>
+
+    </footer>
+
+    <script src="https://unpkg.com/dropzone@5/dist/min/dropzone.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
