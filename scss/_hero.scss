@@ -63,7 +63,7 @@
   .bg-shape {
     position: absolute;
     top: 130px;
-    right: 350px;
+    right: 500px;
     width: 10rem;
     height: 10rem;
     border-radius: 50%;
@@ -78,7 +78,7 @@
   .m-shape {
     background-color: var(--bg-color);
     position: absolute;
-    bottom: 0;
+    bottom: 50px;
     right: 50px;
     width: 6rem;
     height: 6rem;
@@ -102,6 +102,7 @@
   
     &:hover {
       box-shadow: 0px 0px 10px var(--blue-color);
+      cursor: pointer;
     }
   }
   
@@ -116,5 +117,6 @@
   
     &:hover {
       box-shadow: 0px 0px 10px var(--blue-color);
+      cursor: pointer;
     }
   }

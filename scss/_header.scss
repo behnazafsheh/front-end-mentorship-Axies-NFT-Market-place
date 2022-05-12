@@ -1,3 +1,8 @@
+.header{
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
 .menu-container {
   @include FlexRow;
   text-align: center;
@@ -23,7 +28,7 @@
 }
 
 .header-nav-bar ul li {
-  padding: 10px 20px;
+  padding: 1rem 1.8rem;
   position: relative;
 }
 
@@ -121,15 +126,8 @@
 .switch-mode {
   @include FlexRow;
   justify-content: flex-end;
-  margin: 0;
 
-  img {
-    margin: 0 1rem;
-    border-radius: 0.5rem;
-    padding: 1rem;
-  }
-
-  .dark-mood {
-    height: 5rem;
+  i {
+    color: var(--white-color);
   }
 }
