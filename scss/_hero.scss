@@ -1,122 +1,159 @@
 .hero {
-    @include FlexRow;
-    justify-content: space-around;
-    margin-top: 3rem;
-    align-items: center;
+  @include FlexRow;
+  justify-content: space-around;
+  margin-top: 3rem;
+  align-items: center;
+}
+.main-hero {
+  @include FlexColumn;
+  justify-content: flex-start;
+
+  p {
+    color: var(--gray-color);
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
   }
-  .main-hero {
-    @include FlexColumn;
-    justify-content: flex-start;
-  
-    p {
-      color: var(--gray-color);
-      margin-bottom: 2rem;
-      font-size: 1.2rem;
-    }
-  
-    h2 {
-      font-size: 6rem;
-      color: var(--white-color);
-      margin-bottom: 2rem;
-  
-      &:hover {
-        animation: textAnimation 2s infinite;
-      }
-    }
-  
-    span {
-      color: var(--white-color);
-      margin: 0;
-      margin-top: -0.6em;
-      text-shadow: 0 0 0.05em #fff, 0 0 0.2em #fe05e1, 0 0 0.3em #fe05e1;
-      transform: rotate(-7deg);
-    }
-  }
-  .hero-image {
-    position: relative;
-  
-    img {
-      animation: heroImageAnimation 5s infinite ease-in-out;
-      // animation-delay: 2s;
-    }
-  }
-  .hero-image-saturn {
-    position: absolute;
-    right: -80px;
-    width: 60rem;
-    height: 100%;
-    bottom: 0;
-  }
-  .sm-shape {
-    position: absolute;
-    width: 5rem;
-    height: 5rem;
-    border-radius: 50%;
-    background-image: linear-gradient(
-      to right,
-      var(--blue-color),
-      var(--purple-color)
-    );
-    animation: shapeMovement-sm 5s infinite ease-in-out;
-  }
-  
-  .bg-shape {
-    position: absolute;
-    top: 130px;
-    right: 500px;
-    width: 10rem;
-    height: 10rem;
-    border-radius: 50%;
-    background-image: linear-gradient(
-      to right,
-      var(--blue-color),
-      var(--purple-color)
-    );
-    animation: shapeMovement-bg 5s infinite ease-in-out;
-  }
-  
-  .m-shape {
-    background-color: var(--bg-color);
-    position: absolute;
-    bottom: 50px;
-    right: 50px;
-    width: 6rem;
-    height: 6rem;
-    border: 2px solid var(--blue-color);
-    border-radius: 50%;
-    box-shadow: 8px 8px 35px var(--white-color);
-    animation: shapeMovement-bg 5s infinite ease-in-out;
-  }
-  .hero-btn {
-    @include FlexRow;
-    justify-content: flex-start;
-  }
-  .hero-explore {
-    border: 1px solid var(--blue-color);
-    background-color: var(--bg-color);
+
+  h2 {
+    font-size: 6rem;
     color: var(--white-color);
-    border-radius: 2rem;
-    padding: 2rem 2rem;
-    margin: 0 2rem;
-    font-size: 1.5rem;
-  
+    margin-bottom: 2rem;
+
     &:hover {
-      box-shadow: 0px 0px 10px var(--blue-color);
-      cursor: pointer;
+      animation: textAnimation 2s infinite;
     }
   }
-  
-  .hero-create {
-    border: 1px solid var(--blue-color);
-    background-color: var(--bg-color);
+
+  span {
     color: var(--white-color);
-    border-radius: 2rem;
-    padding: 2rem 2rem;
-    margin: 0 2rem;
-    font-size: 1.5rem;
-  
+    margin: 0;
+    margin-top: -0.6em;
+    text-shadow: 0 0 0.05em #fff, 0 0 0.2em #fe05e1, 0 0 0.3em #fe05e1;
+    transform: rotate(-7deg);
+  }
+}
+.hero-image {
+  position: relative;
+
+  img {
+    animation: heroImageAnimation 5s infinite ease-in-out;
+    // animation-delay: 2s;
+  }
+}
+.hero-image-saturn {
+  position: absolute;
+  right: -80px;
+  width: 60rem;
+  height: 100%;
+  bottom: 0;
+}
+.sm-shape {
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-image: linear-gradient(
+    to right,
+    var(--blue-color),
+    var(--purple-color)
+  );
+  animation: shapeMovement-sm 5s infinite ease-in-out;
+}
+
+.bg-shape {
+  position: absolute;
+  top: 130px;
+  right: 500px;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  background-image: linear-gradient(
+    to right,
+    var(--blue-color),
+    var(--purple-color)
+  );
+  animation: shapeMovement-bg 5s infinite ease-in-out;
+}
+
+.m-shape {
+  background-color: var(--bg-color);
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  width: 6rem;
+  height: 6rem;
+  border: 2px solid var(--blue-color);
+  border-radius: 50%;
+  box-shadow: 8px 8px 35px var(--white-color);
+  animation: shapeMovement-bg 5s infinite ease-in-out;
+}
+.hero-btn {
+  @include FlexRow;
+  justify-content: flex-start;
+}
+.hero-explore {
+  border: 1px solid var(--blue-color);
+  background-color: var(--bg-color);
+  color: var(--white-color);
+  border-radius: 2rem;
+  padding: 2rem 2rem;
+  margin: 0 2rem;
+  font-size: 1.5rem;
+
+  &:hover {
+    box-shadow: 0px 0px 10px var(--blue-color);
+    cursor: pointer;
+  }
+}
+
+.hero-create {
+  border: 1px solid var(--blue-color);
+  background-color: var(--bg-color);
+  color: var(--white-color);
+  border-radius: 2rem;
+  padding: 2rem 2rem;
+  margin: 0 2rem;
+  font-size: 1.5rem;
+
+  &:hover {
+    box-shadow: 0px 0px 10px var(--blue-color);
+    cursor: pointer;
+  }
+}
+
+// sticky social media
+.sticky-social-media {
+  @include FlexColumn;
+  justify-content: center;
+  align-items: center;
+  width: 6rem;
+  // height: 40px;
+  // background-color: red;
+  position: fixed;
+  top: 25%;
+  left: -50px;
+  z-index: 100;
+  border-radius: 5rem;
+  box-shadow: 0px 4px 13px 0 rgba(168, 67, 253, 0.3);
+  background-color: var(--blue-color);
+  border-right: 2px solid var(--purple-color);
+
+  &:hover {
+    left: 0;
+    transition: all 1s;
+  }
+
+  a {
+    margin: 2.5rem;
+  }
+
+  i {
+    font-size: 3rem;
+    transform: rotate(20dg);
+    transition: transform 0.5s ease-in-out;
+
     &:hover {
-      box-shadow: 0px 0px 10px var(--blue-color);
-      cursor: pointer;
+      transform: rotate(360deg);
     }
   }
+}
