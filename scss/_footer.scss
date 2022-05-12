@@ -94,6 +94,10 @@
       padding: 1rem;
       border-radius: 0.3rem;
       background-color: var(--darkGray-color);
+
+      i{
+        font-size: 2rem;
+      }
   
       &:hover {
         background-color: var(--gray-color);
