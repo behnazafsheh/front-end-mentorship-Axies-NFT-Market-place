@@ -1,0 +1,435 @@
+.hero-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  // align-items: center;
+  justify-content: center;
+}
+.hero-details {
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+  // justify-content: center;
+
+  h3 {
+    color: var(--white-color);
+    font-size: 3rem;
+  }
+}
+
+.hero-social {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-like,
+.hero-send {
+  display: flex;
+}
+
+.hero-seen,
+.hero-telegram {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 2rem;
+  background-color: var(--black-color);
+  padding: 0.5rem;
+  border-radius: 3rem;
+
+  p {
+    color: var(--white-color);
+    font-size: 1.5rem;
+  }
+
+  i {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+  }
+}
+
+.hero-heart,
+.hero-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--black-color);
+  padding: 0.5rem;
+  border-radius: 3rem;
+  p {
+    color: var(--white-color);
+    font-size: 1.5rem;
+  }
+
+  i {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+  }
+}
+
+.hero-profile {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.left-profile,
+.right-profile {
+  background-color: var(--darkGray-color);
+  border-radius: 3rem;
+  display: flex;
+  align-items: center;
+
+  img {
+    height: 75%;
+    padding: 0 1rem;
+    border-radius: 3rem;
+  }
+}
+.left-profile__description,
+.right-profile__description {
+  display: flex;
+  flex-direction: column;
+
+  span {
+    font-size: 1.5rem;
+    color: var(--gray-color);
+  }
+
+  p {
+    font-size: 1.5rem;
+    color: var(--white-color);
+  }
+}
+
+.hero-description {
+  width: 100%;
+  color: var(--gray-color);
+  font-size: 2rem;
+  margin: 3rem 0;
+}
+
+.hero-bid-count {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 0 1rem;
+  margin-bottom: 2rem;
+}
+
+.hero-bid,
+.hero-countdown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--darkGray-color);
+  height: 10rem;
+  border-radius: 3rem;
+
+  p {
+    font-size: 2rem;
+    color: var(--white-color);
+    margin: 0 1rem;
+  }
+}
+
+.hero-place-bid {
+  padding: 1rem;
+  border-radius: 3rem;
+  background-color: transparent;
+  border: 1px solid var(--white-color);
+  color: var(--white-color);
+
+  &:hover {
+    box-shadow: 0px 0px 20px var(--blue-color);
+    cursor: pointer;
+    background-color: var(--white-color);
+    color: var(--black-color);
+  }
+
+  i {
+    margin: 0 1.3rem;
+    color: var(--blue-color);
+  }
+}
+
+
+/////////////// tabs
+.active-tabs {
+    width: 800px;
+    padding: 10px;
+    position: relative;
+    margin: 20px auto;
+}
+
+.active-tabs input {
+    opacity: 0;
+    display: none;
+    visibility: hidden;
+}
+
+.btn {
+    background: var(--purple-color);
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-family: "open sans";
+    font-size: 13px;
+    height: 40px;
+    line-height: 35px;
+    margin-right: 1px;
+    text-align: center;
+    width: 100px;
+    opacity: 0.8;
+    transition: all 0.4s;
+}
+
+.btn:hover {
+    transform: translateY(-5px);
+    opacity: 1;
+}
+
+.active-tabs input:checked + label {
+    background: #fff;
+    opacity: 1;
+    transform: translateY(-5px);
+    box-shadow: 1px 0 0 0 rgba(0,0,0,0.3);
+    color: #1babbb;
+}
+
+.tabs-container {
+    width: 100%;
+    position: relative;
+    float: left;
+    top: -5px;
+    background: transparent;
+}
+
+.tab-1 ,
+.tab-2 ,
+.tab-3 {
+    height: 200px;
+    width: 100%;
+    box-shadow: 2px 2px 0 0 rgba(0,0,0,0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s;
+    overflow: hidden;
+}
+
+.tab-2 ,
+.tab-4 ,
+.tab-6 {
+    height: 300px;
+}
+
+.tab-1 p ,
+.tab-2 p ,
+.tab-3 p {
+    color: var(--gray-color);
+    font-size: 2rem;
+    margin: 1rem 0;
+    // line-height: 200px;
+    // text-align: center;
+}
+
+.tab-2 p ,
+.tab-4 p ,
+.tab-6 p {
+    line-height: 300px;
+}
+
+.btn-1:checked ~ .tabs-container .tab-1 ,
+.btn-2:checked ~ .tabs-container .tab-2 ,
+.btn-3:checked ~ .tabs-container .tab-3 ,
+.btn-4:checked ~ .tabs-container .tab-4 ,
+.btn-5:checked ~ .tabs-container .tab-5 ,
+.btn-6:checked ~ .tabs-container .tab-6 ,
+.btn-7:checked ~ .tabs-container .tab-7 {
+    position: relative;
+    visibility: visible;
+    top: 0;
+    left: 0;
+    opacity: 1;
+}
+
+
+
+.seller-items-details {
+    @include FlexRow;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+  }
+  .seller-post-details {
+    width: 30%;
+    position: relative;
+    margin-right: 2rem;
+    margin: 2rem 0;
+  
+    img {
+      width: 40%;
+      border-radius: 2rem;
+    }
+  }
+
+
+  /////////live-auction-container
+    .live-auction-container-detail {
+        display: flex;
+        justify-content: space-evenly;
+        background-color: var(--black-color);
+        margin: 5rem 0;
+      }
+      .live-auction-header-detail {
+        @include FlexRow;
+        justify-content: space-between;
+        align-items: center;
+        color: var(--white-color);
+        font-size: 2rem;
+        margin: 3rem 3rem;
+      
+        a {
+          color: var(--white-color);
+          font-size: 2rem;
+        }
+      }
+      
+      .live-auction-post-detail {
+        @include FlexColumn;
+        align-items: center;
+        background-color: var(--darkGray-color);
+        position: relative;
+        border-radius: 2rem;
+        width: 35rem;
+        margin: 3rem 0.5rem;
+      
+        img {
+          border-radius: 1rem;
+          margin: 2rem;
+        }
+      
+        h3 {
+          color: var(--white-color);
+          font-size: 2rem;
+        }
+      }
+      .swiper-slide {
+        width: 35rem !important;
+      }
+      
+      .place-bid {
+        @include FlexRow;
+        position: absolute;
+        bottom: 180px;
+        background-color: var(--white-color);
+        padding: 1rem;
+        border-radius: 1rem;
+        cursor: pointer;
+      
+        &:hover {
+          box-shadow: 0px 0px 10px var(--blue-color);
+          border: var(--gray-color);
+        }
+      
+        i {
+          color: var(--blue-color);
+          margin: 0 0.3rem;
+          font-size: 1rem;
+        }
+        p {
+          font-size: 1rem;
+        }
+      }
+      
+      .timer {
+        @include FlexRow;
+        position: absolute;
+        top: 35px;
+        padding: 1rem;
+        border-radius: 1rem;
+        background-color: var(--bg-color);
+      
+        p {
+          color: var(--white-color);
+          margin: 0 0.5rem;
+        }
+      }
+      
+      .post-creator {
+        @include FlexRow;
+        justify-content: center;
+        align-items: center;
+      }
+      .post-creator-description {
+        @include FlexRow;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+      
+        span {
+          color: var(--gray-color);
+          font-size: 1.3rem;
+        }
+      
+        p {
+          color: var(--white-color);
+          font-size: 1.3rem;
+        }
+        img {
+          width: 20%;
+          height: 30%;
+          margin: 1rem 1rem 1rem 0;
+        }
+      }
+      
+      .description-creator {
+        @include FlexColumn;
+        width: 100%;
+        justify-content: space-around;
+        //   gap: 0;
+      }
+      
+      .post-creator-tag {
+        margin-left: 2rem;
+        color: var(--white-color);
+        font-size: 1.3rem;
+        background-color: var(--blue-color);
+        border-radius: 1rem;
+        padding: 0.8rem;
+      }
+      .border {
+        background-color: var(--gray-color);
+        padding: 0.1rem;
+        width: 85%;
+      }
+      .auction-cost {
+        @include FlexRow;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+        margin: 1rem 0;
+      }
+      
+      .auction-cost-description {
+        @include FlexColumn;
+      
+        p {
+          color: var(--white-color);
+          font-size: 1.6rem;
+        }
+      
+        span {
+          color: var(--gray-color);
+          font-size: 1.3rem;
+        }
+      }
+      
+      .auction-heart i {
+        font-size: 3rem;
+        cursor: pointer;
+      }
