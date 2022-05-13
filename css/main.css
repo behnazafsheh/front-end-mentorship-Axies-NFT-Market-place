@@ -1740,6 +1740,10 @@ i {
   color: var(--white-color);
 }
 
+.hero-img img {
+  width: 100%;
+}
+
 .hero-container {
   display: grid;
   grid-template-columns: 1fr 1fr;

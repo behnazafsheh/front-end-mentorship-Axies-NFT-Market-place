@@ -1,3 +1,6 @@
+.hero-img img{
+    width: 100%;
+}
 .hero-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -433,3 +436,4 @@
         font-size: 3rem;
         cursor: pointer;
       }
+      
