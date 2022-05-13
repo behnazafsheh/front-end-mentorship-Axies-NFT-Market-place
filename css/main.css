@@ -1759,11 +1759,13 @@ i {
 .hero-details h3 {
   color: var(--white-color);
   font-size: 3rem;
+  margin: 2rem 0;
 }
 
 .hero-social {
   display: flex;
   justify-content: space-between;
+  margin: 2rem 0;
 }
 
 .hero-like,
@@ -1785,7 +1787,7 @@ i {
 .hero-seen p,
 .hero-telegram p {
   color: var(--white-color);
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .hero-seen i,
@@ -1921,7 +1923,7 @@ i {
 }
 
 .btn {
-  background: var(--purple-color);
+  background: transparent;
   color: #fff;
   cursor: pointer;
   display: block;
@@ -1947,7 +1949,7 @@ i {
   opacity: 1;
   transform: translateY(-5px);
   box-shadow: 1px 0 0 0 rgba(0, 0, 0, 0.3);
-  color: #1babbb;
+  color: var(--purple-color);
 }
 
 .tabs-container {
@@ -1970,7 +1972,7 @@ i {
   opacity: 0;
   visibility: hidden;
   transition: all 0.4s;
-  overflow: hidden;
+  overflow: scroll;
 }
 
 .tab-2,
@@ -1983,7 +1985,7 @@ i {
 .tab-2 p,
 .tab-3 p {
   color: var(--gray-color);
-  font-size: 2rem;
+  font-size: 1.3rem;
   margin: 1rem 0;
 }
 
