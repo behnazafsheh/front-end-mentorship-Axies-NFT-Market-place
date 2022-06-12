@@ -11,8 +11,6 @@
 .hero-details {
   display: flex;
   flex-direction: column;
-  // align-items: center;
-  // justify-content: center;
 
   h3 {
     color: var(--white-color);
@@ -229,24 +227,10 @@
     overflow: scroll;
 }
 
-.tab-2 ,
-.tab-4 ,
-.tab-6 {
-    height: 300px;
-}
-
-.tab-1 p ,
-.tab-2 p ,
 .tab-3 p {
     color: var(--black-color);
     font-size: 1.3rem;
     margin: 1rem 0;
-}
-
-.tab-2 p ,
-.tab-4 p ,
-.tab-6 p {
-    line-height: 300px;
 }
 
 .btn-1:checked ~ .tabs-container .tab-1 ,
