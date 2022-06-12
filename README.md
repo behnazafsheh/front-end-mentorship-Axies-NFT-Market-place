@@ -6,18 +6,22 @@ https://preview.themeforest.net/item/axies-nft-marketplace-html-template/full_sc
 https://behnazafsheh.github.io/front-end-mentorship-Axies-NFT-Market-place/
 
 📎 # HomePage
+
 <img width="300" alt="Axies-NFT-Marketplace-HTML-Templatee" src="https://user-images.githubusercontent.com/19150633/173225949-c1a60436-162f-4037-b5c1-47c69b9868f5.png">
  
  
 📎 # Itemdetails
+
 <img width="300" alt="item_details" src="https://user-images.githubusercontent.com/19150633/173224962-70678d0d-27d7-4416-a74d-1e846f739b13.png">
 
 
 📎 # EditProfile
+
 <img width="300" alt="Profile-.png" src="https://user-images.githubusercontent.com/19150633/173224848-1219393f-768a-4063-a317-5d8731d5c9c9.png">
 
 
 📎 # Login 
+
 <img width="300" alt="Screen Shot 1401-03-22 at 12 25 17 PM" src="https://user-images.githubusercontent.com/19150633/173224820-69ed50e3-1c53-4227-8007-d5e0c8a7520a.png">
 
 
