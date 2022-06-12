@@ -165,6 +165,8 @@
     padding: 10px;
     position: relative;
     margin: 20px auto;
+
+    
 }
 
 .active-tabs input {
@@ -196,7 +198,8 @@
 }
 
 .active-tabs input:checked + label {
-    background: #fff;
+    // background: #fff;
+    border-bottom: 1px solid var(--white-color);
     opacity: 1;
     transform: translateY(-5px);
     box-shadow: 1px 0 0 0 rgba(0,0,0,0.3);
@@ -235,7 +238,7 @@
 .tab-1 p ,
 .tab-2 p ,
 .tab-3 p {
-    color: var(--gray-color);
+    color: var(--black-color);
     font-size: 1.3rem;
     margin: 1rem 0;
     // line-height: 200px;
@@ -281,6 +284,7 @@
       border-radius: 2rem;
     }
   }
+  
 
 
   /////////live-auction-container
