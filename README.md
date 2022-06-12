@@ -13,7 +13,7 @@ https://preview.themeforest.net/item/axies-nft-marketplace-html-template/full_sc
 📎 ![Profile-](https://user-images.githubusercontent.com/19150633/173224848-1219393f-768a-4063-a317-5d8731d5c9c9.png)
 
 # Login 
-📎 <img width="1305" alt="Screen Shot 1401-03-22 at 12 25 17 PM" src="https://user-images.githubusercontent.com/19150633/173224820-69ed50e3-1c53-4227-8007-d5e0c8a7520a.png">
+📎 <img width="1100" alt="Screen Shot 1401-03-22 at 12 25 17 PM" src="https://user-images.githubusercontent.com/19150633/173224820-69ed50e3-1c53-4227-8007-d5e0c8a7520a.png">
 
 
 
